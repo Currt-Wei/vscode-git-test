@@ -1,0 +1,494 @@
+  //同步测试11
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验二</title>
+    <link type="text/css" rel="stylesheet" href="css/web_2_css.css">
+</head>
+<body>
+<div class="header">
+    <div id="h1">
+        <h1>HTML and CSS</h1>
+        <p>-- made by wjh from CS 1</p>
+    </div>
+    <a href="#">Contact</a>
+    <a href="http://www.w3school.com.cn/">Links</a>
+    <a href="http://www.w3school.com.cn/">About</a>
+    <a href="http://www.w3school.com.cn/">Photos</a>
+    <a href="http://www.w3school.com.cn/">Blog</a>
+    <a href="#">Home</a>
+</div>
+<div class="content">
+    <h2 id="html">HTML标签</h2>
+    <dl>
+        <dt><a id="title">&lt;title&gt;标签:</a></dt>
+        <dd>
+            <blockquote>&lt;title&gt; 标签定义了不同文档的标题。&lt;title&gt; 在 HTML/XHTML 文档中是必须的。
+                    &lt;title&gt; 元素:
+					定义了浏览器工具栏的标题
+					当网页添加到收藏夹时，显示在收藏夹中的标题
+					显示在搜索引擎结果页面的标题
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;title&gt;文章标题&lt;/title&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+        </dd>
+        <hr>
+        <dt><a id="link">&lt;link&gt;标签:</a></dt>
+        <dd>
+            <blockquote>&lt;link&gt;标签定义了文档与外部资源之间的关系。
+
+		&lt;link&gt;标签通常用于链接到样式表:标签定义了文档与外部资源之间的关系。
+
+		&lt;link&gt;标签通常用于链接到样式表:
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+        </dd>
+        <hr>
+        <dt><a id="h1">&lt;h1&gt;标签:</a></dt>
+        <dd>
+            <blockquote>h是英文header标题的缩写，标题无处不在，它的应用范围十分广泛：网站结构、写作文、PPT 等。
+            这里有六个标题元素标签 —— &lt;h1&gt;、&lt;h2&gt; 、&lt;h3&gt;、&lt;h4&gt;、&lt;h5&gt;、&lt;h6&gt;，每个元素代表文档中不同级别的内容：
+            &lt;h1&gt; 表示主标题（the main heading），&lt;h2&gt;表示二级子标题（subheadings），、&lt;h3&gt;表示三级子标题（sub-subheadings），&lt;h4&gt;、&lt;h5&gt;、&lt;h6&gt;依次递减字体的大小。
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;h1&gt;这是h1标题&lt;/h1&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b><br>
+            　　<h1> Learn Web</h1>
+        </dd>
+        <hr>
+
+        <dt><a id="p">&lt;p&gt;标签:</a></dt>
+        <dd>
+            <blockquote>&lt;p&gt;HTML 段落是通过标签&lt;p&gt;来定义的，P是英文<q>paragraph</q>段落的缩写，经常被用来创建一个段落，就和你写作文一样
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;p&gt;这是一个段落。&lt;/p&gt;
+               &lt;p&gt;这是另一个段落。&lt;/p&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b><br>
+            　　<p><b>这是一个段落</b></p>
+                <p><b>这是另一个段落</b></p>
+        </dd>
+        <hr>
+        <dt><a id="a">&lt;a&gt;标签:</a></dt>
+        <dd>
+            <blockquote>&lt;a&gt;标签定义超链接，用于从一张页面链接到另一张页面。 &lt;a&gt;元素最重要的属性是 href 属性，它指示链接的目标。 在所有浏览器中，链接的默认外观是：
+                未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的。
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;a href="http://www.w3school.com.cn"&gt;W3School&lt;/a&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b><br>
+            　　<a href="http://www.w3school.com.cn"> W3School</a>(点击该链接便会跳转到W3school网站)
+        </dd>
+        <hr>
+        <dt><a id="img">&lt;img&gt;标签:</a></dt>
+        <dd>
+            <blockquote>&lt;a&gt;HTML 图像是通过标签&lt;img&gt;来定义的。使用img元素来为你的网站添加图片，使用src 属性指向一个图片的具体地址。请注意：img元素是自关闭元素，不需要结束标记。
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;img src="img/英雄联盟.png" width="200px" height="120px"&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b><br>
+            　　<img src="img/英雄联盟.jpg" width="200px" height="120px">
+        </dd>
+        <hr>
+        <dt><a id="table">&lt;table&gt;标签:</a></dt>
+        <dd>
+            <blockquote>表格由&lt;table&gt;标签来定义。每个表格均有若干行（由&lt;tr&gt;标签定义），每行被分割为若干单元格（由&lt;td&gt;标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+
+                　HTML 表格的基本结构：
+                <br>
+                &lt;table&gt;…&lt;/table&gt;：定义表格
+                <br>
+                &lt;th&gt;…&lt;/th&gt;：定义表格的标题栏（文字加粗）
+                <br>
+                &lt;tr&gt;…&lt;/tr&gt;：定义表格的行
+                <br>
+                &lt;td&gt;…&lt;/td&gt;：定义表格的列
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;row 1, cell 1&lt;/td&gt;
+                        &lt;td&gt;row 1, cell 2&lt;/td&gt;
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td&gt;row 2, cell 1&lt;/td&gt;
+                        &lt;td&gt;row 2, cell 2&lt;/td&gt;
+                   &lt;/tr&gt;
+                &lt;/table&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b><br>
+            　　<table border="1">
+                    <tr>
+                        <td>row 1, cell 1</td>
+                        <td>row 1, cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>row 2, cell 1</td>
+                        <td>row 2, cell 2</td>
+                    </tr>
+                </table>
+        </dd>
+        <hr>
+        <dt><a id="br">&lt;br&gt;标签:</a></dt>
+        <dd>
+            <blockquote>如果您希望在不产生一个新段落的情况下进行换行（新行），请使用&lt;br /&gt;标签。
+
+            在 HTML 语言中， &lt;br /&gt;标签定义为一个换行符，它可以理解为简单的输入一个空行，而不是用来对内容进行分段
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;p&gt;这个&lt;br&gt; 段落&lt;br&gt;演示了分行的效果&lt;/p&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b>    
+            　　<p>这个<br> 段落<br>演示了分行的效果</p>
+        </dd>
+        <hr>
+        <dt><a id="br">&lt;hr&gt;标签:</a></dt>
+        <dd>
+            <blockquote>定义水平线，用来分隔网页的主要区域
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+               &lt;html&gt;
+               &lt;head&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+               &lt;p&gt;这里有一条水平线&lt;/p&gt;
+               &lt;hr/&gt;
+               &lt;/body&gt;
+               &lt;/html&gt;
+            </pre>
+            <b>查看结果：</b>    
+            　　<p>这里有一条水平线</p>
+                <hr/>
+                <br>
+        </dd>
+        <hr>
+        <h2 id="css">CSS属性</h2>
+    </dl>
+        <dt><a id="text">Text:</a></dt>
+        <dd>
+            <blockquote>通过CSS的Text属性，你可以改变页面中文本的颜色、字符间距、对齐文本、装饰文本、对文本进行缩进等等，你可以观察下述的一段简单的应用了CSS文本格式的段落。
+            </blockquote>
+            <b> 实例：（以Text Color为例）</b>
+                <pre>
+                   &lt;html&gt;
+                   &lt;head&gt;
+                   &lt;style type="text/css"&gt;
+                   p{
+                        color:red
+                    }
+                   &lt;/style&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                   &lt;p&gt;这段文字为红色&lt;/p&gt;
+                   &lt;/body&gt;
+                   &lt;/html&gt;
+                </pre>
+            <b>查看结果：</b>
+            　　<p style="color: red">这段文字设置为红色</p>
+        </dd>
+        <hr>
+        <dt><a id="background">background:</a></dt>
+        <dd>
+            <blockquote>CSS 背景属性用于定义HTML元素的背景。
+                        CSS 属性定义背景效果：<br/>
+                        background-color<br/>
+                        background-image<br/>
+                        background-repeat<br/>
+                        background-attachment<br/>
+                        background-position
+            </blockquote>
+            <b> 实例：（以background-color为例）</b>
+                <pre>
+                   &lt;html&gt;
+                   &lt;head&gt;
+                   &lt;style type="text/css"&gt;
+                   body {background-color: yellow}
+                   h4 {background-color: #00ff00}
+                   &lt;/style&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                   &lt;h4&gt;这段文字设置为黄色背景&lt;/h4&gt;
+                   &lt;/body&gt;
+                   &lt;/html&gt;
+                </pre>
+            <b>查看结果：</b>
+            　　<h4>这段文字设置为黄色背景</h4>
+        </dd>
+        <hr>
+        <dt><a id="font">Font:</a></dt>
+        <dd>
+            <blockquote>CSS字体属性定义字体，加粗，大小，文字样式
+            </blockquote>
+            <b> 实例：（以font-size为例）</b>
+                <pre>
+                   &lt;html&gt;
+                   &lt;head&gt;
+                   &lt;style type="text/css"&gt;
+                   p{
+                        font-size:20px;
+                    }
+                   &lt;/style&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                   &lt;p&gt;这段文字为红色&lt;/p&gt;
+                   &lt;/body&gt;
+                   &lt;/html&gt;
+                </pre>
+            <b>查看结果：</b>
+            　　<p style="font-size:20px">这段文字大小为20px</p>
+        </dd>
+        <hr>
+        <dt><a id="border">Boarder:</a></dt>
+        <dd>
+            <blockquote>CSS 边框 (border) 可以是围绕元素内容和内边距的一条或多条线，对于这些线条，您可以自定义它们的样式、宽度以及颜色。使用CSS边框属性，我们可以创建出比HTML中更加优秀的效果。
+            </blockquote>
+            <b> 实例：</b>
+                <pre>
+                   &lt;html&gt;
+                   &lt;head&gt;
+                   &lt;style type="text/css"&gt;
+                   p{
+                        {
+                        border-style:solid;
+                        border-width:5px;
+                        }
+                    }
+                   &lt;/style&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                   &lt;p&gt;这个段落采用了边框&lt;/p&gt;
+                   &lt;/body&gt;
+                   &lt;/html&gt;
+                </pre>
+            <b>查看结果：</b>
+            　　<p style="border-style:solid;border-width: 5px;">这个段落采用了边框</p>
+        </dd>
+        <hr>
+    <dl>
+        
+    </dl>
+    <h2 id="html_tabs">其他一些HTML标签</h2>
+        <div class="left">
+            <div class="sub_left">
+                                        <!-- html表格 -->
+                <table border="1px" cellpadding="5px">
+                    <caption>HTML标签及其用途</caption>
+                    <tr><th>标签名</th><th>用途</th></tr>
+                    <tr><td>&lt;!--...--&gt;</td><td>定义注释</td></tr>
+                    <tr><td>&lt;!DOCTYPE&gt;</td><td>定义文档类型</td></tr>
+                    <tr><td id="abbr">&lt;abbr&gt;</td><td>定义缩写</td></tr>
+                    <tr><td id="b">&lt;b&gt;</td><td>定义粗体字</td></tr>
+                    <tr><td id="col">&lt;col&gt;</td><td>定义表格中一个或多个列的属性值</td></tr>
+                    <tr><td>&lt;h1&gt;(h2...)</td><td>表示不同大小的标题</td></tr>
+                    <tr><td>&lt;br&gt;</td><td>表示换行</td></tr>
+                    <tr><td>&lt;hr&gt;</td><td>表示水平线</td></tr>
+                    <tr><td>&lt;title&gt;</td><td>表示网页标题</td></tr>
+                    <tr><td>&lt;a&gt;</td><td>表示链接</td></tr>
+                    <tr><td>&lt;img&gt;</td><td>表示图像</td></tr>
+                    <tr><td>&lt;p&gt;</td><td>表示一个段落</td></tr>
+                    <tr><td id="em">&lt;em&gt;</td><td>表示强调文本</td></tr>
+                    <tr><td id="strong">&lt;strong&gt;</td><td>表示更加强烈地强调文本</td></tr>
+                    <tr><td id="ul">&lt;ul&gt;</td><td>表示无序列表</td></tr>
+                    <tr><td id="ol">&lt;ol&gt;</td><td>表示有序列表</td></tr>
+                    <tr><td id="li">&lt;li&gt;</td><td>定义列表的项目</td></tr>
+                    <tr><td id="blockquote">&lt;blockquote&gt;</td><td>表示引用(用于一些长引用)</td></tr>
+                    <tr><td id="table">&lt;table&gt;</td><td>表示表格</td></tr>
+                    <tr><td>&lt;q&gt;</td><td>表示行内引用(用于一些短引用)</td></tr>
+                    <tr><td id="pre">&lt;pre&gt;</td><td>表示预编排文字</td></tr>
+                    <tr><td id="artical">&lt;artical&gt;</td><td>定义文章</td></tr>
+                    <tr><td id="audio">&lt;audio&gt;</td><td>定义声音内容</td></tr>
+                    <tr><td id="cite">&lt;cite&gt;</td><td>定义引用</td></tr>
+                    <tr><td id="div">&lt;div&gt;</td><td>定义文章中的节</td></tr>
+                    <tr><td id="dl">&lt;dl&gt;</td><td>定义定义列表</td></tr>
+                    <tr><td>&lt;dt&gt;</td><td>定义定义列表中的项目</td></tr>
+                    <tr><td>&lt;em&gt;</td><td>定义强调文本</td></tr>
+                    <tr><td>&lt;font&gt;</td><td>定义文字的字体、尺寸和颜色</td></tr>
+                    <tr><td>&lt;form&gt;</td><td>定义供用户输入的 HTML 表单</td></tr>
+                    <tr><td>&lt;head&gt;</td><td>定义 section 或 page 的页眉</td></tr>
+                    <tr><td>&lt;html&gt;</td><td>定义 HTML 文档</td></tr>
+                    <tr><td>&lt;i&gt;</td><td>定义斜体字</td></tr>
+                    <tr><td>&lt;img&gt;</td><td>定义图像</td></tr>  
+                    <tr><td>&lt;q&gt;</td><td>定义短的引用</td></tr>  
+                    <tr><td>&lt;strong&gt;</td><td>定义强调文本</td></tr> 
+                    <tr><td>&lt;style&gt;</td><td>定义文档的样式信息</td></tr>
+                    <tr><td>&lt;audio&gt;</td><td>定义音频</td></tr>    
+                    <tr><td>&lt;video&gt;</td><td>定义视频</td></tr>    
+                </table>
+
+            </div>
+        </div>
+        <hr>
+    <h2 id="css_tabs">其他一些CSS标签</h2>
+        <div class="left">
+            <div class="sub_right">
+                             <!-- css表格 -->
+                <table border="1px" cellpadding="5px">
+                    <caption>CSS属性及其用途</caption>
+                    <tr><th>属性名</th><th>用途</th></tr>
+                    <tr><td id="animation">&lt;animation&gt;</td><td>所有动画属性的简写属性</td></tr>
+                    <tr><td>&lt;animation-duration&gt;</td><td> 规定动画完成一个周期所花费的秒或毫秒</td></tr>
+                    <tr><td>&lt;animation-delay&gt;</td><td>规定动画何时开始</td></tr>
+                    <tr><td id="background">&lt;background&gt;</td><td>在一个声明中设置所有的背景属性</td></tr>
+                    <tr><td>&lt;background-color&gt;</td><td>设置元素的背景颜色</td></tr>
+                    <tr><td>&lt;background-image&gt;</td><td>设置元素的背景图像</td></tr>
+                    <tr><td>&lt;background-repeat&gt;</td><td>设置是否及如何重复背景图像</td></tr>
+                    <tr><td id="border">&lt;border&gt;</td><td>在一个声明中设置所有的边框属性</td></tr>
+                    <tr><td id="border-color">&lt;border-color&gt;</td><td>设置四条边框的颜色</td></tr>
+                    <tr><td id="border-style">&lt;border-style&gt;</td><td>设置四条边框的样式</td></tr>
+                    <tr><td id="border-width">&lt;border-width&gt;</td><td>设置四条边框的宽度</td></tr>
+                    <tr><td id="outline">&lt;outline&gt;</td><td>在一个声明中设置所有的轮廓属性</td></tr>
+                    <tr><td id="box-shadow">&lt;box-shadow&gt;</td><td>向方框添加一个或多个阴影</td></tr>
+                    <tr><td>&lt;overflow-x&gt;</td><td>如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪</td></tr>
+                    <tr><td>&lt;overflow-y&gt;</td><td>如果内容溢出了元素内容区域，是否对内容的上/下边缘进行裁剪</td></tr>
+                    <tr><td id="overflow">&lt;overflow-style&gt;</td><td>规定溢出元素的首选滚动方法</td></tr>
+                    <tr><td id="height">&lt;height&gt;</td><td>设置元素高度</td></tr>
+                    <tr><td id="transition">&lt;transition&gt;</td><td>过度属性</td></tr>
+                    <tr><td>&lt;transition-property&gt;</td><td>规定应用过渡的 CSS 属性的名称</td></tr>
+                    <tr><td>&lt;transition-duration&gt;</td><td>定义过渡效果花费的时间</td></tr>
+                    <tr><td>&lt;transition-timing-function&gt;</td><td>规定过渡效果的时间曲线</td></tr>
+                    <tr><td>&lt;transition-delay&gt;</td><td>   规定过渡效果何时开始</td></tr>
+                    <tr><td id="color">&lt;color&gt;</td><td>设置文本的颜色</td></tr>             
+                    <tr><td id="direction">&lt;direction&gt;</td><td>规定文本的方向 / 书写方向</td></tr>
+                    <tr><td id="letter-spacing">&lt;letter-spacing&gt;</td><td>设置字符间距</td></tr>
+                    <tr><td id="line-height">&lt;line-height&gt;</td><td>设置行高</td></tr>
+                    <tr><td id="text-align">&lt;text-align&gt;</td><td> 规定文本的水平对齐方式</td></tr>
+                    <tr><td id="text-decoration">&lt;text-decoration&gt;</td><td>规定添加到文本的装饰效果</td></tr>  
+                    <tr><td id="text-indent">&lt;text-indent&gt;</td><td>规定文本块首行的缩进</td></tr>    
+                    <tr><td id="text-shadow">&lt;text-shadow&gt;</td><td>规定添加到文本的阴影效果</td></tr>                          
+                </table>
+            </div>
+        </div>
+        <hr>
+</div>
+<div class="list">
+	<div class="ul1">
+	    <h4><a href="#html">html标签</a></h4>
+	    <ul>
+	        <li><a href="#title">title</a></li>
+	        <li><a href="#link">link</a></li>
+	        <li><a href="#h1">h1</a></li>
+	        <li><a href="#p">p</a></li>
+	        <li><a href="#a">a</a></li>
+	        <li><a href="#img">img</a></li>
+	        <li><a href="#table">table</a></li>
+	        <li><a href="#br">br</a></li>
+	        <li><a href="#hr">hr</a></li>
+
+	        <li><a href="#abbr">abbr</a></li>
+	        <li><a href="#b">b</a></li>
+	        <li><a href="#em">em</a></li>
+	        <li><a href="#strong">strong</a></li>
+	        <li><a href="#ul">ul</a></li>
+	        <li><a href="#ol">ol</a></li>
+	        <li><a href="#li">li</a></li>
+	        <li><a href="#blockquote">blockquote</a></li>
+	        <li><a href="#table">table</a></li>
+	        <li><a href="#pre">pre</a></li>
+	        <li><a href="#artical">artical</a></li>
+	        <li><a href="#audio">audio</a></li>
+	        <li><a href="#cite">cite</a></li>
+	        <li><a href="#div">div</a></li>
+	        <li><a href="#dl">dl</a></li>
+	        <li><a href="http://www.w3school.com.cn/">...</a></li>
+	    </ul>
+	</div>
+    <br>
+    <div class="ul2">
+	    <h4><a href="#css">css标签</a></h4>
+	    <ul>
+	        <li><a href="#text">text</a></li>
+	        <li><a href="#background">background</a></li>
+	        <li><a href="#font">font</a></li>
+	        <li><a href="#border">border</a></li>
+			<li><a href="#border-width">border-width</a></li>
+	        <li><a href="#border-color">border-color</a></li>
+	        <li><a href="#border-style">border-style</a></li>
+	       	<li><a href="#animation">animation</a></li>
+	        <li><a href="#outline">outline</a></li>
+	        <li><a href="#box-shadow">box-shadow</a></li>
+	        <li><a href="#overflow">overflow</a></li>
+	        <li><a href="#height">height</a></li>
+	        <li><a href="#transition">transition</a></li>
+	        <li><a href="#direction">direction</a></li>
+	        <li><a href="#letter-spacing">letter-spacing</a></li>
+	        <li><a href="#text-align">text-align</a></li>
+	        <li><a href="#line-height">line-height</a></li>
+	        <li><a href="#text-decoration">text-decoration</a></li>
+	        <li><a href="#text-indent">text-indent</a></li>
+	        <li><a href="#text-shadow">text-shadow</a></li>
+	        <li><a href="#color">color</a></li>
+	        <li><a href="#font">font</a></li>
+	        <li><a href="http://www.w3school.com.cn/">...</a></li>
+	    </ul>
+	</div>
+    <br>
+</div>
+
+</body>
+</html>
